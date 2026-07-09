@@ -1,17 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    int number;
+bool isEven(int n) { return (n % 2 == 0); }
 
-    cout << "Enter a number: ";
-    cin >> number;
-
-    if (number % 2 == 0) {
-        cout << number << " is Even.";
-    } else {
-        cout << number << "is Odd. ";
+int main()
+{
+    int n = 247;
+    if (isEven(n) == true) {
+        cout << "Even" << endl;
     }
-
+    else {
+        cout << "Odd";
+    }
     return 0;
 }
