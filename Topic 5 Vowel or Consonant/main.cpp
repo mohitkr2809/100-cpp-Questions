@@ -1,23 +1,21 @@
-#include <iostream>
 #include <cctype>
+#include <iostream>
 using namespace std;
-
-int main() {
-    char ch;
-
-    cout << "Enter a character: ";
-    cin >> ch;
-
-    ch = tolower(ch);   // Convert to lowercase
-
+int main()
+{
+    char ch = 'e';
     if (isalpha(ch)) {
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
-            cout << "It is a Vowel.";
-        else
-            cout << "It is a Consonant.";
-    } else {
-        cout << "It is not an alphabet character.";
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o'
+            || ch == 'u' || ch == 'A' || ch == 'E'
+            || ch == 'I' || ch == 'O' || ch == 'U') {
+            cout << ch << " is a vowel." << endl;
+        }
+        else {
+            cout << ch << " is a consonant." << endl;
+        }
     }
-
+    else {
+        cout << ch << " is not an alphabet." << endl;
+    }
     return 0;
 }

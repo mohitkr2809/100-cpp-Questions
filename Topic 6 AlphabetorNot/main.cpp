@@ -1,16 +1,15 @@
+#include <cctype>
 #include <iostream>
 using namespace std;
-
 int main()
 {
-    string str = "GeeksforGeeks";
-    int length = 0;
-
-    for (int i = 0; str[i] != '\0'; i++) {
-        length++;
+    char ch;
+    ch = 'a';
+    if (isalpha(ch)) {
+        cout << ch << " is an alphabet." << endl;
     }
-
-    cout << "The length of the string is: " << length << endl;
-
+    else {
+        cout << ch << " is not an alphabet." << endl;
+    }
     return 0;
 }
